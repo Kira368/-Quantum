@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Admin | Finance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated background elements -->
+    <div class="particle-layer"></div>
+    <div class="finance-gradient"></div>
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">🌌</div>
+            <h2>Quantum</h2>
+        </div>
+        
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <div class="nav-icon-container">
+                        <span class="nav-icon">📈</span>
+                    </div>
+                    <span class="nav-text">Overview</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="team.html" class="nav-link">
+                    <div class="nav-icon-container">
+                        <span class="nav-icon">👥</span>
+                    </div>
+                    <span class="nav-text">Team</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="products.html" class="nav-link">
+                    <div class="nav-icon-container">
+                        <span class="nav-icon">🛍️</span>
+                    </div>
+                    <span class="nav-text">Inventory</span>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="finance.html" class="nav-link">
+                    <div class="nav-icon-container">
+                        <span class="nav-icon">💰</span>
+                        <div class="active-pulse"></div>
+                    </div>
+                    <span class="nav-text">Finance</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="settings.html" class="nav-link">
+                    <div class="nav-icon-container">
+                        <span class="nav-icon">⚙️</span>
+                    </div>
+                    <span class="nav-text">Settings</span>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="sidebar-footer">
+            <div class="help-card">
+                <span>Need financial assistance?</span>
+                <button class="help-btn">Contact CFO</button>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Main content area -->
+    <main class="main-content">
+        <header class="main-header">
+            <div class="header-left">
+                <h1>Financial Dashboard</h1>
+                <div class="breadcrumbs">
+                    <span>Home</span>
+                    <span class="divider">/</span>
+                    <span class="current">Finance Center</span>
+                </div>
+                <div class="time-filter">
+                    <select id="period-select">
+                        <option value="today">Today</option>
+                        <option value="week" selected>This Week</option>
+                        <option value="month">This Month</option>
+                        <option value="quarter">This Quarter</option>
+                        <option value="year">This Year</option>
+                    </select>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="header-action-btn">
+                    <span class="btn-icon">📤</span>
+                    Export Report
+                </button>
+                <button class="header-action-btn primary">
+                    <span class="btn-icon">➕</span>
+                    New Transaction
+                </button>
+                <div class="notification-bell">
+                    <span class="bell-icon">🔔</span>
+                    <span class="notification-count">2</span>
+                </div>
+                <div class="user-profile">
+                    <div class="user-avatar">Q</div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Dashboard content -->
+        <div class="dashboard-content finance">
+            <!-- Financial KPIs -->
+            <div class="kpi-grid">
+                <div class="kpi-card income">
+                    <div class="kpi-header">
+                        <div class="kpi-icon">↑</div>
+                        <h3>Total Income</h3>
+                        <div class="kpi-trend positive">+12.5%</div>
+                    </div>
+                    <div class="kpi-value">$124,852</div>
+                    <div class="kpi-comparison">vs $110,950 last period</div>
+                </div>
+                
+                <div class="kpi-card expenses">
+                    <div class="kpi-header">
+                        <div class="kpi-icon">↓</div>
+                        <h3>Total Expenses</h3>
+                        <div class="kpi-trend negative">+8.2%</div>
+                    </div>
+                    <div class="kpi-value">$68,427</div>
+                    <div class="kpi-comparison">vs $63,250 last period</div>
+                </div>
+                
+                <div class="kpi-card profit">
+                    <div class="kpi-header">
+                        <div class="kpi-icon">↗</div>
+                        <h3>Net Profit</h3>
+                        <div class="kpi-trend positive">+18.3%</div>
+                    </div>
+                    <div class="kpi-value">$56,425</div>
+                    <div class="kpi-comparison">vs $47,700 last period</div>
+                </div>
+                
+                <div class="kpi-card cashflow">
+                    <div class="kpi-header">
+                        <div class="kpi-icon">↘</div>
+                        <h3>Cash Flow</h3>
+                        <div class="kpi-trend warning">-3.1%</div>
+                    </div>
+                    <div class="kpi-value">$42,189</div>
+                    <div class="kpi-comparison">vs $43,530 last period</div>
+                </div>
+            </div>
+            
+            <!-- Financial visualization -->
+            <div class="finance-viz">
+                <div class="viz-card main-chart">
+                    <div class="viz-header">
+                        <h3>Income vs Expenses</h3>
+                        <div class="viz-actions">
+                            <button class="viz-btn active">Trend</button>
+                            <button class="viz-btn">Comparison</button>
+                            <button class="viz-btn">Forecast</button>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-placeholder animated">
+                            <div class="wave-animation"></div>
+                            <div class="placeholder-text">Financial Performance Visualization</div>
+                        </div>
+                    </div>
+                    <div class="chart-footer">
+                        <div class="chart-summary">
+                            <div class="summary-item">
+                                <span class="indicator income"></span>
+                                <span>Income: $124,852</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="indicator expenses"></span>
+                                <span>Expenses: $68,427</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="indicator profit"></span>
+                                <span>Profit Margin: 45.2%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="viz-card breakdown">
+                    <div class="viz-header">
+                        <h3>Expense Breakdown</h3>
+                        <div class="legend">
+                            <div class="legend-item payroll">
+                                <span class="legend-dot"></span>
+                                <span>Payroll</span>
+                            </div>
+                            <div class="legend-item operations">
+                                <span class="legend-dot"></span>
+                                <span>Operations</span>
+                            </div>
+                            <div class="legend-item marketing">
+                                <span class="legend-dot"></span>
+                                <span>Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-placeholder">
+                            <div class="doughnut-animation"></div>
+                            <div class="placeholder-text">Expense Distribution</div>
+                        </div>
+                    </div>
+                    <div class="breakdown-details">
+                        <div class="detail-item">
+                            <span class="category payroll">Payroll</span>
+                            <span class="amount">$32,450</span>
+                            <span class="percentage">47.4%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="category operations">Operations</span>
+                            <span class="amount">$18,720</span>
+                            <span class="percentage">27.4%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="category marketing">Marketing</span>
+                            <span class="amount">$12,150</span>
+                            <span class="percentage">17.8%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Financial transactions -->
+            <div class="finance-section">
+                <div class="section-header">
+                    <h2>Recent Transactions</h2>
+                    <div class="section-actions">
+                        <div class="search-bar">
+                            <span class="search-icon">🔍</span>
+                            <input type="text" placeholder="Search transactions...">
+                        </div>
+                        <button class="filter-btn">
+                            <span class="btn-icon">🎚️</span>
+                            Filters
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="transactions-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="date">Date</th>
+                                <th class="description">Description</th>
+                                <th class="category">Category</th>
+                                <th class="amount">Amount</th>
+                                <th class="status">Status</th>
+                                <th class="actions">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="income">
+                                <td class="date">Today, 14:30</td>
+                                <td class="description">
+                                    <div class="transaction-icon">💳</div>
+                                    <div class="transaction-details">
+                                        <div class="title">Client Payment - Acme Corp</div>
+                                        <div class="meta">Invoice #INV-2023-482</div>
+                                    </div>
+                                </td>
+                                <td class="category">Services Revenue</td>
+                                <td class="amount positive">+$4,500.00</td>
+                                <td class="status">
+                                    <span class="status-badge completed">Completed</span>
+                                </td>
+                                <td class="actions">
+                                    <button class="table-btn view">View</button>
+                                    <button class="table-btn more">⋯</button>
+                                </td>
+                            </tr>
+                            <tr class="expense">
+                                <td class="date">Today, 11:15</td>
+                                <td class="description">
+                                    <div class="transaction-icon">🖥️</div>
+                                    <div class="transaction-details">
+                                        <div class="title">Cloud Hosting Renewal</div>
+                                        <div class="meta">AWS Monthly Services</div>
+                                    </div>
+                                </td>
+                                <td class="category">Technology</td>
+                                <td class="amount negative">-$1,284.50</td>
+                                <td class="status">
+                                    <span class="status-badge completed">Completed</span>
+                                </td>
+                                <td class="actions">
+                                    <button class="table-btn view">View</button>
+                                    <button class="table-btn more">⋯</button>
+                                </td>
+                            </tr>
+                            <tr class="income">
+                                <td class="date">Yesterday</td>
+                                <td class="description">
+                                    <div class="transaction-icon">🔄</div>
+                                    <div class="transaction-details">
+                                        <div class="title">Subscription Renewal</div>
+                                        <div class="meta">Annual Enterprise Plan</div>
+                                    </div>
+                                </td>
+                                <td class="category">Recurring Revenue</td>
+                                <td class="amount positive">+$9,999.00</td>
+                                <td class="status">
+                                    <span class="status-badge completed">Completed</span>
+                                </td>
+                                <td class="actions">
+                                    <button class="table-btn view">View</button>
+                                    <button class="table-btn more">⋯</button>
+                                </td>
+                            </tr>
+                            <tr class="expense pending">
+                                <td class="date">Yesterday</td>
+                                <td class="description">
+                                    <div class="transaction-icon">📦</div>
+                                    <div class="transaction-details">
+                                        <div class="title">Office Supplies</div>
+                                        <div class="meta">Monthly Order</div>
+                                    </div>
+                                </td>
+                                <td class="category">Operations</td>
+                                <td class="amount negative">-$487.35</td>
+                                <td class="status">
+                                    <span class="status-badge pending">Pending</span>
+                                </td>
+                                <td class="actions">
+                                    <button class="table-btn view">View</button>
+                                    <button class="table-btn more">⋯</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="table-footer">
+                        <div class="pagination">
+                            <button class="page-btn disabled">
+                                <span class="btn-icon">←</span>
+                                Previous
+                            </button>
+                            <div class="page-numbers">
+                                <button class="page-btn active">1</button>
+                                <button class="page-btn">2</button>
+                                <button class="page-btn">3</button>
+                                <span class="ellipsis">...</span>
+                                <button class="page-btn">8</button>
+                            </div>
+                            <button class="page-btn">
+                                Next
+                                <span class="btn-icon">→</span>
+                            </button>
+                        </div>
+                        <div class="table-summary">
+                            Showing <strong>1-4</strong> of <strong>28</strong> transactions
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick actions -->
+            <div class="quick-actions">
+                <button class="action-btn">
+                    <span class="action-icon">🧾</span>
+                    Create Invoice
+                </button>
+                <button class="action-btn">
+                    <span class="action-icon">📊</span>
+                    Generate Report
+                </button>
+                <button class="action-btn">
+                    <span class="action-icon">💸</span>
+                    Process Payroll
+                </button>
+                <button class="action-btn">
+                    <span class="action-icon">📆</span>
+                    Schedule Payment
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

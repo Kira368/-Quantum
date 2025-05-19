@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Admin | Overview</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Decorative background elements -->
+    <div class="particle-layer"></div>
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">🌌</div>
+            <h2>Quantum</h2>
+            <!-- Removed version badge -->
+        </div>
+        
+        <ul class="nav-menu">
+            <li class="nav-item active">
+                <a href="index.html" class="nav-link">
+                    <div class="nav-icon-container">
+                        <span class="nav-icon">📈</span>
+                        <div class="active-pulse"></div>
+                    </div>
+                    <span class="nav-text">Overview</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="team.html" class="nav-link">
+                    <div class="nav-icon-container">
+                        <span class="nav-icon">👥</span>
+                    </div>
+                    <span class="nav-text">Team</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="products.html" class="nav-link">
+                    <div class="nav-icon-container">
+                        <span class="nav-icon">🛍️</span>
+                    </div>
+                    <span class="nav-text">Inventory</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="finance.html" class="nav-link">
+                    <div class="nav-icon-container">
+                        <span class="nav-icon">💰</span>
+                    </div>
+                    <span class="nav-text">Finance</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="settings.html" class="nav-link">
+                    <div class="nav-icon-container">
+                        <span class="nav-icon">⚙️</span>
+                    </div>
+                    <span class="nav-text">Settings</span>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="sidebar-footer">
+            <div class="help-card">
+                <span>Need help?</span>
+                <button class="help-btn">Contact Support</button>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Main content area -->
+    <main class="main-content">
+        <header class="main-header">
+            <div class="header-left">
+                <h1>Overview Dashboard</h1>
+                <div class="breadcrumbs">Home / Overview</div>
+            </div>
+            <div class="header-right">
+                <div class="notification-bell">
+                    <span class="bell-icon">🔔</span>
+                    <span class="notification-count">3</span>
+                </div>
+                <div class="user-profile">
+                    <div class="user-avatar">Q</div>
+                    <div class="user-info">
+                        <span class="user-name">Quantum Admin</span>
+                        <span class="user-role">Super Admin</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Main dashboard content -->
+        <div class="dashboard-content">
+            <!-- Quick metrics -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-icon">📊</span>
+                        <span class="metric-title">Total Revenue</span>
+                    </div>
+                    <div class="metric-value">$28,745</div>
+                    <div class="metric-change positive">
+                        <span class="change-icon">↑</span>
+                        <span>12.8% from last month</span>
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-icon">👥</span>
+                        <span class="metric-title">Active Users</span>
+                    </div>
+                    <div class="metric-value">1,428</div>
+                    <div class="metric-change positive">
+                        <span class="change-icon">↑</span>
+                        <span>5.1% from last week</span>
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-icon">🛒</span>
+                        <span class="metric-title">New Orders</span>
+                    </div>
+                    <div class="metric-value">327</div>
+                    <div class="metric-change negative">
+                        <span class="change-icon">↓</span>
+                        <span>2.3% from yesterday</span>
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-icon">📈</span>
+                        <span class="metric-title">Conversion Rate</span>
+                    </div>
+                    <div class="metric-value">3.67%</div>
+                    <div class="metric-change positive">
+                        <span class="change-icon">↑</span>
+                        <span>0.9% from last month</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main charts -->
+            <div class="chart-area">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Performance Analytics</h3>
+                        <div class="chart-controls">
+                            <button class="time-filter active">Week</button>
+                            <button class="time-filter">Month</button>
+                            <button class="time-filter">Year</button>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <!-- Chart placeholder -->
+                        <div class="chart-placeholder">
+                            <div class="placeholder-text">Revenue and Growth Chart</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Activity Distribution</h3>
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <span class="legend-color web"></span>
+                                <span>Web</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color mobile"></span>
+                                <span>Mobile</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color api"></span>
+                                <span>API</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <!-- Chart placeholder -->
+                        <div class="chart-placeholder">
+                            <div class="placeholder-text">Activity Sources Chart</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tables and lists -->
+            <div class="data-tables">
+                <div class="table-card">
+                    <div class="table-header">
+                        <h3>Recent Transactions</h3>
+                        <div class="table-actions">
+                            <button class="table-action-btn export">Export</button>
+                            <button class="table-action-btn filter">Filter</button>
+                        </div>
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Customer</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#QT-1001</td>
+                                <td>Alex Johnson</td>
+                                <td>Today, 10:30 AM</td>
+                                <td>$128.50</td>
+                                <td><span class="status-badge completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>#QT-1002</td>
+                                <td>Maria Garcia</td>
+                                <td>Today, 09:15 AM</td>
+                                <td>$245.00</td>
+                                <td><span class="status-badge completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>#QT-1003</td>
+                                <td>James Wilson</td>
+                                <td>Yesterday</td>
+                                <td>$89.99</td>
+                                <td><span class="status-badge pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>#QT-1004</td>
+                                <td>Sarah Lee</td>
+                                <td>Yesterday</td>
+                                <td>$156.75</td>
+                                <td><span class="status-badge failed">Failed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <h3>System Activity</h3>
+                        <button class="refresh-btn">Refresh</button>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-icon update">🔄</div>
+                            <div class="activity-content">
+                                <div class="activity-time">2 minutes ago</div>
+                                <div class="activity-text">System update completed successfully</div>
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-icon security">🔒</div>
+                            <div class="activity-content">
+                                <div class="activity-time">15 minutes ago</div>
+                                <div class="activity-text">New login from Chrome, Windows</div>
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-icon user">👤</div>
+                            <div class="activity-content">
+                                <div class="activity-time">1 hour ago</div>
+                                <div class="activity-text">New user registration: michael@example.com</div>
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-icon order">🛒</div>
+                            <div class="activity-content">
+                                <div class="activity-time">2 hours ago</div>
+                                <div class="activity-text">New order #QT-1005 placed</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

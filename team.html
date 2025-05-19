@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Admin | Team Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div class="particle-layer"></div>
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">🌌</div>
+            <h2>Quantum</h2>
+        </div>
+        
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <div class="nav-icon-container">
+                        <span class="nav-icon">📈</span>
+                    </div>
+                    <span class="nav-text">Overview</span>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="team.html" class="nav-link">
+                    <div class="nav-icon-container">
+                        <span class="nav-icon">👥</span>
+                        <div class="active-pulse"></div>
+                    </div>
+                    <span class="nav-text">Team</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="products.html" class="nav-link">
+                    <div class="nav-icon-container">
+                        <span class="nav-icon">🛍️</span>
+                    </div>
+                    <span class="nav-text">Inventory</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="finance.html" class="nav-link">
+                    <div class="nav-icon-container">
+                        <span class="nav-icon">💰</span>
+                    </div>
+                    <span class="nav-text">Finance</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="settings.html" class="nav-link">
+                    <div class="nav-icon-container">
+                        <span class="nav-icon">⚙️</span>
+                    </div>
+                    <span class="nav-text">Settings</span>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="sidebar-footer">
+            <div class="help-card">
+                <span>Need help with team?</span>
+                <button class="help-btn">Contact HR</button>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="main-header">
+            <div class="header-left">
+                <h1>Team Management</h1>
+                <div class="breadcrumbs">Home / Team</div>
+            </div>
+            <div class="header-right">
+                <div class="notification-bell">
+                    <span class="bell-icon">🔔</span>
+                    <span class="notification-count">5</span>
+                </div>
+                <div class="user-profile">
+                    <div class="user-avatar">Q</div>
+                    <div class="user-info">
+                        <span class="user-name">Quantum Admin</span>
+                        <span class="user-role">HR Manager</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="team-content">
+            <!-- Team Controls -->
+            <div class="team-controls">
+                <div class="search-bar">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Search team members...">
+                </div>
+                <div class="team-actions">
+                    <button class="btn btn-primary">
+                        <span class="btn-icon">+</span>
+                        <span>Add Member</span>
+                    </button>
+                    <button class="btn btn-secondary">
+                        <span class="btn-icon">📊</span>
+                        <span>Reports</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Team Stats -->
+            <div class="team-stats">
+                <div class="stat-card">
+                    <div class="stat-value">42</div>
+                    <div class="stat-label">Total Members</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">38</div>
+                    <div class="stat-label">Active</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">4</div>
+                    <div class="stat-label">On Leave</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">87%</div>
+                    <div class="stat-label">Productivity</div>
+                </div>
+            </div>
+            
+            <!-- Team Table -->
+            <div class="team-table-container">
+                <div class="table-header">
+                    <h3>Team Members</h3>
+                    <div class="table-filters">
+                        <select class="filter-select">
+                            <option>All Departments</option>
+                            <option>Development</option>
+                            <option>Design</option>
+                            <option>Marketing</option>
+                            <option>Support</option>
+                        </select>
+                        <select class="filter-select">
+                            <option>All Roles</option>
+                            <option>Admin</option>
+                            <option>Manager</option>
+                            <option>Member</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <table class="team-table">
+                    <thead>
+                        <tr>
+                            <th class="checkbox-cell">
+                                <input type="checkbox">
+                            </th>
+                            <th>Member</th>
+                            <th>Position</th>
+                            <th>Department</th>
+                            <th>Status</th>
+                            <th>Last Active</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="checkbox-cell">
+                                <input type="checkbox">
+                            </td>
+                            <td>
+                                <div class="member-info">
+                                    <div class="member-avatar" style="background: #7d5fff;">AJ</div>
+                                    <div class="member-details">
+                                        <div class="member-name">Alex Johnson</div>
+                                        <div class="member-email">alex@quantum.com</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Lead Developer</td>
+                            <td>Engineering</td>
+                            <td><span class="status-badge active">Active</span></td>
+                            <td>Today, 10:30 AM</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit">✏️</button>
+                                    <button class="action-btn view">👁️</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="checkbox-cell">
+                                <input type="checkbox">
+                            </td>
+                            <td>
+                                <div class="member-info">
+                                    <div class="member-avatar" style="background: #5fd3ff;">MS</div>
+                                    <div class="member-details">
+                                        <div class="member-name">Maria Smith</div>
+                                        <div class="member-email">maria@quantum.com</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>UX Designer</td>
+                            <td>Design</td>
+                            <td><span class="status-badge active">Active</span></td>
+                            <td>Today, 9:15 AM</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit">✏️</button>
+                                    <button class="action-btn view">👁️</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="checkbox-cell">
+                                <input type="checkbox">
+                            </td>
+                            <td>
+                                <div class="member-info">
+                                    <div class="member-avatar" style="background: #50c878;">RW</div>
+                                    <div class="member-details">
+                                        <div class="member-name">Robert Wilson</div>
+                                        <div class="member-email">robert@quantum.com</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Marketing Head</td>
+                            <td>Marketing</td>
+                            <td><span class="status-badge on-leave">On Leave</span></td>
+                            <td>Yesterday</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit">✏️</button>
+                                    <button class="action-btn view">👁️</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="checkbox-cell">
+                                <input type="checkbox">
+                            </td>
+                            <td>
+                                <div class="member-info">
+                                    <div class="member-avatar" style="background: #ffaa44;">SD</div>
+                                    <div class="member-details">
+                                        <div class="member-name">Sarah Davis</div>
+                                        <div class="member-email">sarah@quantum.com</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Support Agent</td>
+                            <td>Customer Support</td>
+                            <td><span class="status-badge active">Active</span></td>
+                            <td>Today, 11:45 AM</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit">✏️</button>
+                                    <button class="action-btn view">👁️</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="checkbox-cell">
+                                <input type="checkbox">
+                            </td>
+                            <td>
+                                <div class="member-info">
+                                    <div class="member-avatar" style="background: #ff5555;">MJ</div>
+                                    <div class="member-details">
+                                        <div class="member-name">Michael Johnson</div>
+                                        <div class="member-email">michael@quantum.com</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>DevOps Engineer</td>
+                            <td>Engineering</td>
+                            <td><span class="status-badge inactive">Inactive</span></td>
+                            <td>3 days ago</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit">✏️</button>
+                                    <button class="action-btn view">👁️</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="pagination-btn disabled">
+                        <span>←</span> Previous
+                    </button>
+                    <div class="page-numbers">
+                        <span class="page-number active">1</span>
+                        <span class="page-number">2</span>
+                        <span class="page-number">3</span>
+                        <span class="page-number">...</span>
+                        <span class="page-number">8</span>
+                    </div>
+                    <button class="pagination-btn">
+                        Next <span>→</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Team Insights -->
+            <div class="team-insights">
+                <div class="insight-card">
+                    <h4>Department Distribution</h4>
+                    <div class="chart-placeholder" style="height: 200px;">
+                        <div class="placeholder-text">Department Pie Chart</div>
+                    </div>
+                </div>
+                <div class="insight-card">
+                    <h4>Activity This Week</h4>
+                    <div class="chart-placeholder" style="height: 200px;">
+                        <div class="placeholder-text">Activity Bar Chart</div>
+                    </div>
+                </div>
+                <div class="insight-card">
+                    <h4>Upcoming Birthdays</h4>
+                    <ul class="birthday-list">
+                        <li>
+                            <div class="birthday-avatar" style="background: #7d5fff;">TJ</div>
+                            <div class="birthday-info">
+                                <span class="birthday-name">Tom Jones</span>
+                                <span class="birthday-date">Tomorrow</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="birthday-avatar" style="background: #5fd3ff;">AM</div>
+                            <div class="birthday-info">
+                                <span class="birthday-name">Anna Miller</span>
+                                <span class="birthday-date">May 25</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="birthday-avatar" style="background: #50c878;">DW</div>
+                            <div class="birthday-info">
+                                <span class="birthday-name">David Wilson</span>
+                                <span class="birthday-date">June 3</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
